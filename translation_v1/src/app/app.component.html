@@ -1,0 +1,12 @@
+<h1>{{ 'i18n.myHeader' | translate }}</h1>
+
+<button mat-button (click)="changeLanguage()">{{ 'i18n.changeLanguage' | translate }}</button>
+<button mat-button (click)="reload()">{{ 'i18n.reloadLanguage' | translate }}</button>
+
+<h2>{{ 'i18n.AppComponent.login' | translate }}</h2>
+<h2>{{ 'i18n.AppComponent.logout' | translate }}</h2>
+
+<app-test></app-test>
+
+<mat-paginator length="42" [pageSizeOptions]="[5, 10, 25, 100]">
+</mat-paginator>
